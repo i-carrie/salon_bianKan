@@ -49,6 +49,9 @@ test:
 #
 production:
   <<: *default
+  adapter: postgresql
+  encoding: unicode
+  pool: 5
   database: salon_bianKan_production
   username: salon_bianKan
   password: <%= ENV['SALON_BIANKAN_DATABASE_PASSWORD'] %>
