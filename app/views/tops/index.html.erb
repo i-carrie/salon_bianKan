@@ -153,7 +153,27 @@
         <div class="panel is-show">
         
           <div style='width: 800px;'>
-            <div id="map" style='width: 800px; height: 400px;'></div>
+            <div id="map" style='width: 800px; height: 400px;'>
+              <script type="text/javascript">
+                handler = Gmaps.build('Google');
+                handler.buildMap({ provider: {}, 
+                                internal: {id: 'map'}}, 
+                                function(){markers = handler.addMarkers([
+                                {
+                                  "lat": 35.557414,
+                                  "lng": 139.647359,
+                                  "infowindow": "美杏館"
+                                }
+                              ]);
+                              handler.bounds.extendWith(markers);
+                              handler.fitMapToBounds();
+                              handler.getMap().setZoom(16);
+                              });
+              </script>          
+            </div>
+            <br>
+            <a href="https://www.google.com/maps/dir/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8C%97%E5%8C%BA%E6%97%A5%E5%90%89%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%91+%E6%97%A5%E5%90%89%E9%A7%85/%E3%80%92223-0061+%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8C%97%E5%8C%BA%E6%97%A5%E5%90%89%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%95+%E5%8A%A9%E5%B7%9D%E3%83%8F%E3%82%A4%E3%83%84/@35.5551696,139.6455745,16z/data=!4m14!4m13!1m5!1m1!1s0x60185f76e18c9d4d:0xc4a6f4b87d35fcb0!2m2!1d139.6468632!2d35.5532868!1m5!1m1!1s0x60185f79b1dc22e9:0xcd430dd638f6e2b8!2m2!1d139.6473513!2d35.5573628!3e2?hl=ja">
+             こちら</a>
           </div>
 
         </div>
