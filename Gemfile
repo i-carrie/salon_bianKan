@@ -69,3 +69,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 gem 'gmaps4rails'
 gem 'dotenv-rails'
+
+gem 'font-awesome-sass', '~> 5.4.1'
