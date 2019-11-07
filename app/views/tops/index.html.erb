@@ -88,7 +88,7 @@
       <!--タブを切り替えて表示するコンテンツ-->
       <div class="panel-group">
  
-        <div class="panel">
+        <div class="panel is-show">
           <ul class="panel-item">
             <li>縮毛矯正リペア</li>
             <li>カラーリペア</li>
@@ -150,34 +150,23 @@
         <div class="panel">Content-C</div>
 
 
-        <div class="panel is-show">
-
+        <div class="panel">
           <div style='width: 800px;'>
-
             <div class="panel-areaone">
-
               <p class="panel-areaone--address">
+                <i class="fas fa-map-marker-alt"></i>
                 <span class="lineone">所在地</span><br>
                 〒223-0061<br>
                 横浜市港北区日吉2-15-3<br>
                 Tel・Fax: 045-563-3804<br>
                 フリーダイヤル: 0120-122-180<br>
               </p>
-              <div id="map" style='width: 500px; height: 300px;'>
+              <%# <div id="map" style='width: 500px; height: 300px;'> %>
+              <div id="map">
                 <%= render partial: 'layouts/ggmap' %>
               </div>
-
-              <%# <p class="panel-areaone--how">
-                <span class="lineone">電車でご来店のお客様</span><br>
-                <span class="linetwo">＊＊＊ 10,000円以上ご利用のお客様で</span>
-                <span class="linethree">電車をご利用の方にスペシャルサービスです。＊＊＊</span>
-                日吉の駅前からタクシーをご利用頂けます（730円）。<br>
-                行き先は「旭湯近くの”まいばすけっと”まで」と言ってください。<br>
-                悪質なタクシーもたまに見かけますので、行き先が分からない<br>
-                運転手さんの時はすぐに電話（0120-122-180）を下さい。<br>
-                こちらから案内いたします。
-              </p>         %>
             </div>
+
             <p class="maplink">
               <%= link_to 'Google Mapはこちら', 'https://www.google.com/maps/dir/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8C%97%E5%8C%BA%E6%97%A5%E5%90%89%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%91+%E6%97%A5%E5%90%89%E9%A7%85/%E3%80%92223-0061+%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8C%97%E5%8C%BA%E6%97%A5%E5%90%89%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%95+%E5%8A%A9%E5%B7%9D%E3%83%8F%E3%82%A4%E3%83%84/@35.5551696,139.6455745,16z/data=!4m14!4m13!1m5!1m1!1s0x60185f76e18c9d4d:0xc4a6f4b87d35fcb0!2m2!1d139.6468632!2d35.5532868!1m5!1m1!1s0x60185f79b1dc22e9:0xcd430dd638f6e2b8!2m2!1d139.6473513!2d35.5573628!3e2?hl=ja', {class: "ggllink", target: "_blank"} %>
             </p>
@@ -185,24 +174,30 @@
 
             <div class="panel-areatwo">
               <div class="panel-areatwo--how">
+                <i class="fas fa-train"></i>
                 <span class="lineone">電車でご来店のお客様</span><br>
                 <span class="linetwo">10,000円以上ご利用のお客様で電車をご利用の方にスペシャルサービスです。</span><br>
                 日吉の駅前からタクシーをご利用頂けます（730円）。
-                行き先は「旭湯近くの<br>
+                行き先は「旭湯近くの
                 ”まいばすけっと”まで」と言ってください。
-                悪質なタクシーもたまに見かけますので、<br>行き先が分からない
-                運転手さんの時はすぐに電話（0120-122-180）を下さい。<br>
-                こちらから案内いたします。 
+                悪質なタクシーもたまに見かけますので、行き先が分からない
+                運転手さんの時はすぐに電話（0120-122-180）を下さい。
+                こちらから案内いたします。
               </div>     
             </div>
 
 
             <div class="panel-areathr">
-            
-              <span>注意</span><br>
+              <div class="panel-areathr--subj">
+                <p class="lineone"><i class="fas fa-exclamation-circle notice"></i></p>
+                <p class="linetwo">注意</p>
+              </div>
+              <p>
+              <i class="fas fa-taxi"></i>
               タクシーご利用の際は必ず領収書をご持参ください。領収書と引き換えで
               タクシー代を当店が負担いたします。領収書をお持ちでない場合は申し訳ありませんが
               お客様のご負担になりますのでお忘れになりませんよう必ずもらってください。
+              </p>
             </div>
 
 
