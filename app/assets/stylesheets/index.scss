@@ -252,7 +252,7 @@ header {
         .panel.is-show {
           display: flex;
           background-color: rgb(245, 200, 231);
-          min-height: 700px;
+          min-height: 800px;
 
           .panel-item {
             @include tab {
@@ -368,6 +368,82 @@ header {
               padding-left: 40px;              
             }
           }
+
+          .panel-areaone {
+            display: flex;
+            width: 100%;
+            padding-left: 40px;
+            padding-top: 20px;
+
+
+            &--address {
+              width: 35%;
+
+              .lineone {
+                line-height: 50px;
+                font-size: 20px;
+              }
+            }
+
+            #map {
+              margin-left: 40px;
+            }
+          }
+
+          .maplink {
+            padding-top: 10px;
+            padding-left: 41%;
+
+            .ggllink {
+              text-decoration: none;
+            }
+
+            a {
+              color: #000;
+            }
+
+            a:hover {
+              color: blue;
+              font-weight: bold;
+            }
+          }
+
+          .panel-areatwo {
+            padding-left: 70px;
+            padding-top: 20px;
+
+            &--how {
+              width: 95%;
+              border: solid 2px #980072;
+              border-top-right-radius: 1em;
+              border-bottom-right-radius: 1em;
+              border-bottom-left-radius: 1em;
+              padding-bottom: 20px;
+              padding-left: 20px;
+            }
+
+            .lineone {
+              line-height: 50px;
+              font-size: 20px;
+            }
+            .linetwo {
+              font-weight: bold;
+            }
+          }
+
+
+          .panel-areathr {
+            padding-left: 70px;
+            padding-top: 20px;
+
+            span {
+              font-size: 20px;
+              color: red;
+              line-height: 50px;
+            }
+          }
+
+
         }
       }
     }
