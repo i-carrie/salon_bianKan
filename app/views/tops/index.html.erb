@@ -25,11 +25,11 @@
 
     <div class="cover"></div>
 
-    
-
     <section class="imgshot">
       <img src="sample.jpg">
     </section>
+
+    
 
     <section class="whatNew">
       <div class="whatNew-header">
@@ -54,7 +54,7 @@
         <p class="whatNew-info--content">
           メールアドレスが変わりました
           biankan@cute.email.ne.jp
-          登録ご変更宜しくお願い致します
+          登録ご変更宜しくお願い致します。
         </p>
       </div>
     </section>
@@ -71,24 +71,27 @@
         NYの女性のあこがれのブランドなのです。
         そんな技術を私たちは体験できています。縮毛矯正数多くあれど是非、お試しになってみてください。
         私たちはネットワークを通してリペアを追求する仲間たちと、よりよい技術のご提供ができるように勉強会を重ねています。
-        お客様のニーズにあった新しい情報と技術を心がけています。
+        お客様のニーズにあった新しい情報と技術を心がけています。<br><br>
+        <i class="fas fa-caret-right"></i>
+        <%= link_to 'Yukoシステムをもっと知る', 'http://www.yukoyamashita.com/jpn/about/index.html', {target: "_blank"} %>
       </div>
     </section>
 
     <section class="detail">
       <!--タブ-->
       <ul class="tab-group">
-        <li class="tab is-active">メニュー & 料金</li>
+        <li class="tab is-active">営業日 & 予約</li>
+        <li class="tab">メニュー & 料金</li>
         <li class="tab">特典・クーポン</li>
-        <li class="tab">営業日 & 予約</li>
         <li class="tab">アクセス</li>
         <li class="tab">店舗情報</li>
       </ul>
 
       <!--タブを切り替えて表示するコンテンツ-->
       <div class="panel-group">
+        <div class="panel is-show">Content-C</div>
  
-        <div class="panel is-show">
+        <div class="panel">
           <ul class="panel-item">
             <li>縮毛矯正リペア</li>
             <li>カラーリペア</li>
@@ -131,7 +134,6 @@
             <li>4,500円</li>
             <li>1,000円</li>
           </ul>
-
         </div>
 
         <div class="panel">
@@ -147,9 +149,6 @@
           </div>         
         </div>
 
-        <div class="panel">Content-C</div>
-
-
         <div class="panel">
           <div style='width: 800px;'>
             <div class="panel-areaone">
@@ -159,7 +158,8 @@
                 〒223-0061<br>
                 横浜市港北区日吉2-15-3<br>
                 Tel・Fax: 045-563-3804<br>
-                フリーダイヤル: 0120-122-180<br>
+                フリーダイヤル: 0120-122-180<br><br>
+                <span>日吉駅より徒歩6分</span>
               </p>
               <%# <div id="map" style='width: 500px; height: 300px;'> %>
               <div id="map">
@@ -170,7 +170,6 @@
             <p class="maplink">
               <%= link_to 'Google Mapはこちら', 'https://www.google.com/maps/dir/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8C%97%E5%8C%BA%E6%97%A5%E5%90%89%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%91+%E6%97%A5%E5%90%89%E9%A7%85/%E3%80%92223-0061+%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8C%97%E5%8C%BA%E6%97%A5%E5%90%89%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%95+%E5%8A%A9%E5%B7%9D%E3%83%8F%E3%82%A4%E3%83%84/@35.5551696,139.6455745,16z/data=!4m14!4m13!1m5!1m1!1s0x60185f76e18c9d4d:0xc4a6f4b87d35fcb0!2m2!1d139.6468632!2d35.5532868!1m5!1m1!1s0x60185f79b1dc22e9:0xcd430dd638f6e2b8!2m2!1d139.6473513!2d35.5573628!3e2?hl=ja', {class: "ggllink", target: "_blank"} %>
             </p>
-
 
             <div class="panel-areatwo">
               <div class="panel-areatwo--how">
@@ -186,7 +185,6 @@
               </div>     
             </div>
 
-
             <div class="panel-areathr">
               <div class="panel-areathr--subj">
                 <p class="lineone"><i class="fas fa-exclamation-circle notice"></i></p>
@@ -199,11 +197,7 @@
               お客様のご負担になりますのでお忘れになりませんよう必ずもらってください。
               </p>
             </div>
-
-
-
           </div>
-
         </div>
 
         <div class="panel">
@@ -226,8 +220,6 @@
             <li class="panel-val--right">045-563-3804</li>   
           </ul>        
         </div>
-
-
       </div>
     </section>
 
