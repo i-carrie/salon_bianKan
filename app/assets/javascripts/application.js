@@ -31,4 +31,8 @@ $(function () {
     eventCalendar();
   });
   $(document).on('turbolinks:before-cache', clearCalendar);
+
+  $('#calendar').fullCalendar({
+    events: '/events.json'
+    });
 });
