@@ -290,6 +290,31 @@ header {
           background-color: #d6e8f7;
           min-height: 1000px;
 
+          #calendar {
+            background-color: #fff;
+            height: 65%;
+            width: 65%;
+            margin-top: 50px;
+            margin-left: 70px;
+            padding: 10px;
+            @include tab {
+              padding: 0;
+              margin-top: 30px;
+              margin-left: 40px;
+              font-size: 12px;
+              height: 80%;
+              width: 80%;
+            }
+            @include sp {
+              padding: 0;
+              margin-top: 30px;
+              margin-left: 10px;
+              font-size: 12px;
+              height: 95%;
+              width: 95%;
+            }
+          }
+
           .panel-item {
             @include tab {
               width: 50%;
