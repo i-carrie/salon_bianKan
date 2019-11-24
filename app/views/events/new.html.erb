@@ -1,5 +1,6 @@
-<h1 class="cal_title">New Event</h1>
-
-<%= render 'form', event: @event %>
-
-<%= link_to 'Back', events_path %>
+<div class="wrap">
+  <h1>カレンダー編集フォーム</h1>
+  <%= render 'form', event: @event %>
+  <i class="fas fa-caret-right"></i>
+  <%= link_to '編集画面へ', events_path, class: 'btn_back' %>
+<div>
