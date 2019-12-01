@@ -1,6 +1,11 @@
 <div class="wrap">
-  <h1>カレンダー編集フォーム</h1>
+  <h1>カレンダ新規作成</h1>
   <%= render 'form', event: @event %>
+</div>
+
+<div class="nav_three">
   <i class="fas fa-caret-right"></i>
-  <%= link_to '編集画面へ', events_path, class: 'btn_back' %>
-<div>
+  <%= link_to '編集画面へ', events_path, class: 'btn_back' %> |
+  <%= link_to 'トップ画面へ', root_path %>
+</div>
+
