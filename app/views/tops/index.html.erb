@@ -90,7 +90,12 @@
       <!--タブを切り替えて表示するコンテンツ-->
       <div class="panel-group">
         <div class="panel is-show">
-          <div id="calendar"></div>
+          <div>
+            <div class="reservation">
+              <i class="fas fa-caret-right"></i>
+              <%= link_to '予約フォームはこちら[準備中]', books_path %></div>
+            <div id="calendar"></div>
+          </div>
         </div>
  
         <div class="panel">
@@ -230,6 +235,6 @@
       <p>美杏館</p>
       <h4>ALL RIGHTS RESERVED.</h4>
     </footer>
-
+    <p class="admin"><%= link_to 'admin', new_event_path %></p>
   </body>
 </html>

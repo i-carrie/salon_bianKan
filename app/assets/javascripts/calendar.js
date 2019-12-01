@@ -19,7 +19,9 @@ $(function () {
 
           $('#calendar').fullCalendar({
               events: '/events.json',
-              lang: 'ja'
+              lang: 'ja',
+              displayEventTime: false, // don't show the time column in list view
+
           });
       }
   });
