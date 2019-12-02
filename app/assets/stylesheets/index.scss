@@ -291,11 +291,18 @@ header {
           min-height: 1000px;
 
           .reservation {
+            @include tab {
+              padding-left: 40px;         
+            }
+            @include sp {
+              padding-left: 10px;          
+            }
+
             padding-top: 40px;
             padding-left: 70px;
               a {
                 color: #000;
-                font-size: 18px;
+                font-size: 16px;
               }
              a:hover {
                color: crimson;
@@ -459,6 +466,17 @@ header {
             padding-left: 40px;
             padding-top: 20px;
 
+            .byWalk {
+              display: block;
+            }
+            .byCar {
+              display: block;
+              padding-top: 20px;
+            }
+            .byline{
+              font-weight: normal;
+            }
+
             &--address {
               @include tab {
                 width: 100%;
@@ -477,12 +495,12 @@ header {
 
               .lineone {
                 @include sp {
-                  font-size: 16px;
+                  //font-size: 16px;
                   line-height: 30px;
                   font-weight: normal;
                 }
                 line-height: 50px;
-                font-size: 20px;
+                font-size: 16px;
                 font-weight: normal;
               }
             }
@@ -644,7 +662,7 @@ header {
           justify-content: flex-start;
           // background-color: rgb(252, 6, 198);
           background-color: #fff;
-          height: 950px;
+          min-height: 600px;
           padding-left: 5px;
           padding-right: 5px;
           width: 100%;
