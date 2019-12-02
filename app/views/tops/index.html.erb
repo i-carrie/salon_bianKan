@@ -93,8 +93,9 @@
           <div>
             <div class="reservation">
               <i class="fas fa-caret-right"></i>
-              <%= link_to '予約フォームはこちら[準備中]', books_path %></div>
-            <div id="calendar"></div>
+              <%= link_to '予約フォームはこちら[準備中]', books_path %>
+            </div>
+          <div id="calendar"></div>
           </div>
         </div>
  
@@ -166,7 +167,10 @@
                 横浜市港北区日吉2-15-3<br>
                 Tel・Fax: 045-563-3804<br>
                 フリーダイヤル: 0120-122-180<br><br>
-                <span>日吉駅より徒歩6分</span>
+                <span class="byWalk"><i class="fas fa-walking"></i> 電車でお越しのお客様</span>
+                <span class="byline">日吉駅より徒歩6分</span>
+                <span class="byCar"><i class="fas fa-car"></i> お車でお越しのお客様</span>
+                <span class="byline">三井のリパーク日吉２丁目第３駐車場ご利用で駐車券発行致します。</span>
               </p>
               <%# <div id="map" style='width: 500px; height: 300px;'> %>
               <div id="map">
@@ -178,7 +182,7 @@
               <%= link_to 'Google Mapはこちら', 'https://www.google.com/maps/dir/%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8C%97%E5%8C%BA%E6%97%A5%E5%90%89%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%91+%E6%97%A5%E5%90%89%E9%A7%85/%E3%80%92223-0061+%E7%A5%9E%E5%A5%88%E5%B7%9D%E7%9C%8C%E6%A8%AA%E6%B5%9C%E5%B8%82%E6%B8%AF%E5%8C%97%E5%8C%BA%E6%97%A5%E5%90%89%EF%BC%92%E4%B8%81%E7%9B%AE%EF%BC%91%EF%BC%95+%E5%8A%A9%E5%B7%9D%E3%83%8F%E3%82%A4%E3%83%84/@35.5551696,139.6455745,16z/data=!4m14!4m13!1m5!1m1!1s0x60185f76e18c9d4d:0xc4a6f4b87d35fcb0!2m2!1d139.6468632!2d35.5532868!1m5!1m1!1s0x60185f79b1dc22e9:0xcd430dd638f6e2b8!2m2!1d139.6473513!2d35.5573628!3e2?hl=ja', {class: "ggllink", target: "_blank"} %>
             </p>
 
-            <div class="panel-areatwo">
+            <%# <div class="panel-areatwo">
               <div class="panel-areatwo--how">
                 <i class="fas fa-train"></i>
                 <span class="lineone">電車でご来店のお客様</span><br>
@@ -190,9 +194,9 @@
                 運転手さんの時はすぐに電話（0120-122-180）を下さい。
                 こちらから案内いたします。
               </div>     
-            </div>
+            </div> %>
 
-            <div class="panel-areathr">
+            <%# <div class="panel-areathr">
               <div class="panel-areathr--subj">
                 <p class="lineone"><i class="fas fa-exclamation-circle notice"></i></p>
                 <p class="linetwo">注意</p>
@@ -203,7 +207,7 @@
               タクシー代を当店が負担いたします。領収書をお持ちでない場合は申し訳ありませんが
               お客様のご負担になりますのでお忘れになりませんよう必ずもらってください。
               </p>
-            </div>
+            </div> %>
           </div>
         </div>
 
