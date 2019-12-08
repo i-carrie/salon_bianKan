@@ -1,4 +1,4 @@
-.wrap-login {
+.wrap-login, .wrap-login-edit {
   background-color: lightgray;
   width: 700px;
   height: 400px;
@@ -11,6 +11,11 @@
     margin-bottom: 15px;
     font-size: 22px;
     font-weight: bold;
+  }
+
+  h3 {
+    font-size: 14px;
+    padding-bottom: 30px;
   }
 
   .field {
@@ -29,6 +34,15 @@
     background-color: rgb(17, 17, 17);
     color:#fff;
   }
+
+  .reset {
+    margin-top: 15px;
+    width: 200px;
+    height: 40px;
+    border: double 5px skyblue;
+    background-color: rgb(17, 17, 17);
+    color:#fff;   
+  }
 }
 
 .nav_three {
@@ -39,5 +53,15 @@
   }
   a:hover {
     color: rgb(78, 193, 238);
+  }
+}
+
+.wrap-login-edit {
+  height: 650px;
+
+  .acct-del {
+    padding-top: 70px;
+    font-size: 22px;
+    font-weight: bold;
   }
 }
