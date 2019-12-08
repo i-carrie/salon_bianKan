@@ -1,0 +1,43 @@
+.wrap-login {
+  background-color: lightgray;
+  width: 700px;
+  height: 400px;
+  margin-left: 50px;
+  margin-top: 20px;
+  padding-top: 30px;
+  padding-left: 40px;
+
+  h2 {
+    margin-bottom: 15px;
+    font-size: 22px;
+    font-weight: bold;
+  }
+
+  .field {
+    padding-bottom: 20px;
+
+    &-val {
+      width: 300px;
+    }
+  }
+
+  .actions {
+    margin-top: 15px;
+    width: 100px;
+    height: 40px;
+    border: double 5px skyblue;
+    background-color: rgb(17, 17, 17);
+    color:#fff;
+  }
+}
+
+.nav_three {
+  padding-top: 20px;
+  padding-left: 50px;
+  a {
+    color: #000;
+  }
+  a:hover {
+    color: rgb(78, 193, 238);
+  }
+}
