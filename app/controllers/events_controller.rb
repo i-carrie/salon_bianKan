@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
-  before_action :move_to_index
+  #before_action :move_to_index
 
   # GET /events
   # GET /events.json
@@ -16,7 +16,10 @@ class EventsController < ApplicationController
   # GET /events/new
   def new
     @event = Event.new
-
+    # type = current_user.login_type
+    if current_user.login_type == 2   
+      redirect_to  root_path
+    end
   end
 
   # GET /events/1/edit
