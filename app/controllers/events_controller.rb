@@ -1,5 +1,6 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
+  #before_action :move_to_index
 
   # GET /events
   # GET /events.json
@@ -15,6 +16,10 @@ class EventsController < ApplicationController
   # GET /events/new
   def new
     @event = Event.new
+    # type = current_user.login_type
+    if current_user.login_type == 2   
+      redirect_to  root_path
+    end
   end
 
   # GET /events/1/edit
@@ -70,5 +75,9 @@ class EventsController < ApplicationController
     # Never trust parameters from the scary internet, only allow the white list through.
     def event_params
       params.require(:event).permit(:title, :description, :start_date, :end_date)
+    end
+
+    def move_to_index
+      redirect_to  root_path unless user_signed_in?
     end
 end

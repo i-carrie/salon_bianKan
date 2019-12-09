@@ -759,7 +759,6 @@ header {
     }
   };
 
-
 footer {
   width: 100%;
   padding: 15px 35%;
@@ -791,4 +790,12 @@ footer {
   padding-left: 50px;
   padding-bottom: 20px;
   font-size: 12px;
+}
+
+
+.logout {
+  display: none;
+  font-size: 12px;
+  padding-left: 50px;
+  padding-bottom: 20px;
 }

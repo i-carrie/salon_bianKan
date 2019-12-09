@@ -1,0 +1,21 @@
+<div class="wrap-login">
+  <h2>パスワードをお忘れですか？</h2>
+  <h3>メールアドレスを入力しパスワードのリセットボタンをクリックしてください。<br>
+  メールアドレスに再設定の案内が届きますので手順に従って再設定してください。</h3>
+
+  <%= form_for(resource, as: resource_name, url: password_path(resource_name), html: { method: :post }) do |f| %>
+    <%= render "devise/shared/error_messages", resource: resource %>
+
+    <div class="field">
+      <%= f.label :メールアドレス %><br />
+      <%= f.email_field :email, autofocus: true, autocomplete: "email", class: 'field-val' %>
+    </div>
+
+    <%= f.submit "パスワードのリセット", class: 'reset' %>
+
+  <% end %>
+</div>
+
+<div class="nav_three">
+  <%= render "devise/shared/links" %>
+</div>
