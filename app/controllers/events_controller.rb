@@ -1,6 +1,6 @@
 class EventsController < ApplicationController
   before_action :set_event, only: [:show, :edit, :update, :destroy]
-  #before_action :move_to_index
+  # before_action :move_to_index
 
   # GET /events
   # GET /events.json
@@ -11,19 +11,26 @@ class EventsController < ApplicationController
   # GET /events/1
   # GET /events/1.json
   def show
+    #ここにもvalidationが必要。userのtypeが2だった場合、ログインしてない場合等
   end
 
   # GET /events/new
   def new
     @event = Event.new
     # type = current_user.login_type
-    if current_user.login_type == 2   
+    # redirect_to  root_path unless user_signed_in?
+    #ここにもvalidationが必要。userのtypeが2だった場合、ログインしてない場合等
+    #今はmethod errorとなる。かといって、before_actionをするとカレンダの
+    #休業日情報をみれなくなる(ログインしてない場合は表示されない)
+
+    if current_user.login_type == 2
       redirect_to  root_path
     end
   end
 
   # GET /events/1/edit
   def edit
+    #ここにもvalidationが必要。userのtypeが2だった場合、ログインしてない場合等
   end
 
   # POST /events
@@ -77,7 +84,7 @@ class EventsController < ApplicationController
       params.require(:event).permit(:title, :description, :start_date, :end_date)
     end
 
-    def move_to_index
-      redirect_to  root_path unless user_signed_in?
-    end
+    # def move_to_index
+    #   redirect_to  root_path unless user_signed_in?
+    # end
 end
