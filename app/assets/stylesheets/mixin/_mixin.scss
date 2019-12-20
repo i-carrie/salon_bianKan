@@ -1,12 +1,26 @@
-// $pc: 1024px;
-$pc: 2000px;
-// $pc: 1200px;
-$tab: 680px;
-// $sp: 480px;
-$sp: 580px;
+// //$pc: 1024px;
+// $pc: 2000px;
+// //$pc: 1000px;
+
+// //$tab: 680px;
+// $tab: 600px;
+
+// // $sp: 480px;
+// //$sp: 580px;
+// $sp: 559px;
+
+$pc: 960px; // PC
+$tab: 960px; // タブレット
+$sp: 560px;  // スマホ
+
+// @mixin pc {
+//   @media (max-width: ($pc)) {
+//     @content;
+//   }
+// }
 
 @mixin pc {
-  @media (max-width: ($pc)) {
+  @media (min-width: ($pc)) {
     @content;
   }
 }
