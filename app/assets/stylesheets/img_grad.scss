@@ -1,0 +1,32 @@
+.grad {
+  background-color: linear-gradient(to bottom, #a6d900 0%, #ff4454 100%);
+  opacity: 0.5;
+  animation: huerotator 3s infinite alternate;
+  }
+
+  @keyframes huerotator {
+  0% {
+    -webkit-filter: hue-rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+
+  100% {
+    -webkit-filter: hue-rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+.slider{
+    margin: 100px auto;
+    width: 80%;
+}
+.slider img{
+    height: auto;
+    width: 100%;
+}
+/*slick setting*/
+.slick-prev:before,
+.slick-next:before {
+    color: #000;
+}
