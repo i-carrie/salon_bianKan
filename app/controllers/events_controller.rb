@@ -78,6 +78,7 @@ class EventsController < ApplicationController
       # redirect_to  root_path unless user_signed_in?
       if user_signed_in? == false || current_user.login_type == 2
         redirect_to  root_path
+        # redirect_to controller: :tops, action: :index
       end
     end
 
