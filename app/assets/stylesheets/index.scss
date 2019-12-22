@@ -57,12 +57,16 @@ a {
   background-size: cover;
   color: #fff;
   margin: 0 auto;
+  width: 100%;
+  margin-bottom: -100px;
   height: 100px;
   text-align: center;
   font-size: 40px;
   line-height: 110px;
+  
   @include pc {
-    max-width: 1200px;
+    // max-width: 1200px;
+    width: 100%;
   };
   @include sp {
     font-size: 28px;
