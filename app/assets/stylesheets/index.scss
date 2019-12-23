@@ -1279,19 +1279,27 @@ footer {
 }
 
 
-.admin {
-  padding-left: 50px;
+.admin_tool {
+  width: 140px;
+  height: 30px;
+  margin: 0 auto;
+  display: flex;
   padding-bottom: 20px;
-  font-size: 12px;
+  a {
+    color: #000;
+  }
+  a:hover {
+    color: rgb(247, 26, 173);
+  }
+  .admin {
+    font-size: 12px;
+  }
+  .logout {
+    font-size: 10px;
+    padding-left: 20px;
+  }
 }
 
-
-.logout {
-  display: none;
-  font-size: 12px;
-  padding-left: 50px;
-  padding-bottom: 20px;
-}
 
 
 

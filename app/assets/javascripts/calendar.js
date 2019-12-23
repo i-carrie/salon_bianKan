@@ -10,8 +10,11 @@ $(function () {
     });
     $(document).on('turbolinks:before-cache', clearCalendar);
 
-    $('#calendar').fullCalendar({
-    events: '/events.json'
+          $('#calendar').fullCalendar({
+              events: '/events.json',
+              lang: 'ja',
+              contentHeight: 'auto',
+//               displayEventTime: false, // don't show the time column in list view
     });
 });
 
