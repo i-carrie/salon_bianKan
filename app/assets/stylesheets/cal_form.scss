@@ -1,6 +1,15 @@
 .fc-content {
   background-color: red;
   height: 30px;
+  @include sp {
+    display: inline-block;
+
+  };
+}
+
+
+.fc-time {
+  display: none;
 }
 
 a.fc-day-grid-event {
